@@ -15,6 +15,10 @@ Submodules:
 from .chapter_formatting import format_chapter
 from .diff_display import diff_inline_display
 from .font_mapping import apply_font_mapping
+from .numeric_conversion import (
+    arabic_to_chinese,
+    chinese_to_arabic,
+)
 from .text_cleaning import clean_chapter_title, is_promotional_line
 
 __all__ = [
@@ -22,5 +26,7 @@ __all__ = [
     "format_chapter",
     "clean_chapter_title",
     "is_promotional_line",
+    "chinese_to_arabic",
+    "arabic_to_chinese",
     "diff_inline_display",
 ]
